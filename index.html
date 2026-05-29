@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row h-100vh">
+            <div class="col-sm-6"> <!-- area img // fishing button  -->
+                <div class="col-sm-12 h-50 bg-blue border-darkBrown" id="fishingWindow">
+                    <button class="clamp-1 padding-clamp-s bg-lightBrown border-darkBrown" onclick="castRod()" id="cast">Cast Rod! </button>
+                    <video id="castVideo" class="h-100 w-100" autoplay muted style="display: none;">
+                    <source src="images/castRod.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-sm-12 h-50 bg-lightBrown border-darkBrown" id="sellbg">
+                    <div class="col-sm-3">
+                            <p class=" clamp-3 padding-clamp-s op-40" id="message1"></p>
+                            <p class=" clamp-3 padding-clamp-s op-50" id="message2"></p>
+                            <p class=" clamp-3 padding-clamp-s op-60" id="message3"></p>
+                            <p class=" clamp-3 padding-clamp-s op-70" id="message4"></p>
+                            <p class=" clamp-3 padding-clamp-s op-80" id="message5"></p>
+                            <p class=" clamp-3 padding-clamp-s op-90" id="message6"></p>
+                            <p class=" clamp-3 padding-clamp-s" id="message7"></p>
+                    </div>
+                        <div class="col-sm-3">
+                        </div>
+                    <div onclick="sellFish()" class="col-sm-6 h-100" id="sellWindow"> <!-- sell button -->
+                    
+                        
+                    </div>
+                </div>   
+            </div>
+            <div class="col-sm-6 h-100vh"> <!-- info // inventory // shop -->
+                
+                <div class="row h-33">
+                    <div class="w-100 h-100 bg-lightBrown border-darkBrown">
+                        <div class="h-100 ">
+                            <h2 class="clamp-1 padding-clamp">Stats:</h2>
+                            <p class="g clamp-3 padding-clamp-s align-left" id="gold">Gold: loading...</p>
+                            <p class="clamp-3 padding-clamp-s align-left" id="bait">Bait(s): loading...</p>
+                            <p class="clamp-3 padding-clamp-s align-left" id="net">Net(s): loading...</p>
+                            <p class="clamp-3 padding-clamp-s align-left" id="rod">Rod(s): loading...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row h-33 ">
+                    
+                    <div onclick="goToInv()" class="col-sm-12 h-100 bg-lightBrown border-darkBrown" id="invWindow">
+                        <img class="h-100" src="images/inv.png" alt="inventory">
+                    </div>
+                </div>
+                <div class="row h-33">
+                    <div onclick="goToStore()" class="col-sm-12 h-100 bg-lightBrown border-darkBrown" id="shopWindow">
+                        <img class="img-fluid" src="images/shopMenu.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div onclick="click1()" class="minigame" id="minigame1">
+            
+        </div>
+        <div onclick="click2()" class="minigame" id="minigame2">
+            
+        </div>
+        <div onclick="click3()" class="minigame" id="minigame3">
+            
+        </div>
+        <div onclick="click4()" class="minigame" id="minigame4">
+            
+        </div>
+        <div onclick="click5()" class="minigame" id="minigame5">
+            
+        </div>
+        <div onclick="click6()" class="minigame" id="minigame6">
+            
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>
